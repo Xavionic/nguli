@@ -29,7 +29,7 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Tentang Kami</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Layanan</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Artikel</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Masuk/Daftar</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ url('/dashboard') }}">Masuk/Daftar</a></li>
                     </ul>
                 </div>
             </div>

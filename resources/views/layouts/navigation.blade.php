@@ -5,7 +5,7 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="{{ route('dashboard') }}">
+                    <a href="{{ url('/') }}">
                         <x-application-logo class="block h-10 w-auto fill-current text-gray-600" />
                     </a>
                 </div>
@@ -35,6 +35,9 @@
 
                     <x-slot name="content">
                         <!-- Authentication -->
+                        <x-dropdown-link :href="route('profile')">
+                                {{ __('My Profile') }}
+                        </x-dropdown-link>
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
 
@@ -85,6 +88,9 @@
 
             <div class="mt-3 space-y-1">
                 <!-- Authentication -->
+                <x-dropdown-link :href="route('profile')">
+                    {{ __('My Profile') }}
+            </x-dropdown-link>
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
 
