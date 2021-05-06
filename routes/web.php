@@ -27,6 +27,14 @@ Route::group(['middleware' => 'auth'], function(){
         return view('dashboard');
     })->name('dashboard');
 
+    Route::get('/kuli', function () {
+        return view('kuli.index');
+    })->name('kuli');
+
+    Route::get('/mandor', function () {
+        return view('mandor.index');
+    })->name('mandor');
+
     Route::view('profile', 'profile')->name('profile');
 
     Route::put('profile', [\App\Http\Controllers\ProfileController::class, 'update'])->name('profile.update');
